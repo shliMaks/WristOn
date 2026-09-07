@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  # База даних у пам'яті (Брокер повідомлень)
+  redis_broker:
+    image: redis:latest
+    container_name: map_redis
+    ports:
+      - "6379:6379"
+
+  # Фоновий працівник (Celery)
+  celery_worker:
+    build: .
+    container_name: map_celery_worker
+    # Запускаємо Celery замість стандартного FastAPI
+    command: celery -A tg_parser.celery_app worker --loglevel=info
+    env_file:
+      - .env
+    depends_on:
+      - redis_broker
+    # Синхронізуємо файли: зміни в коді на Windows одразу з'являться в Docker
+    volumes:
+      - .:/app
