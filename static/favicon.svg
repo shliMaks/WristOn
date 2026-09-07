@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
-  <!-- Основне кільце (браслет), зроблене товстішим для кращої видимості -->
-  <circle cx="55" cy="55" r="35" fill="none" stroke="#2C5140" stroke-width="9" />
-  
-  <!-- Деталь на браслеті (циферблат/застібка) із заокругленими краями -->
-  <line x1="18" y1="45" x2="45" y2="18" stroke="#2C5140" stroke-width="12" stroke-linecap="round" />
-</svg>
