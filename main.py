@@ -1,16 +1,33 @@
 import time
 import re
 import requests
+import os
 
 import json
 import google.generativeai as genai
 from geopy.geocoders import Nominatim
 from geopy.exc import GeocoderTimedOut
 
+from dotenv import load_dotenv
+
+
 from bs4 import BeautifulSoup
 from geopy.geocoders import Nominatim
 from geopy.exc import GeocoderTimedOut
 from playwright.sync_api import sync_playwright
+
+from database import SessionLocal
+from models import Incident
+
+load_dotenv()
+
+CATEGORY_MAPPING = {
+    "Грабіж": 1,
+    "Розбійний напад": 2,
+    "ДТП": 3,
+    "Вбивство": 4,
+    "Хуліганство": 5
+}
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
@@ -24,7 +41,7 @@ CATEGORIES = {
     326: "Хуліганство",
 }
 
-genai.configure(api_key="ВСУНЬ КЛЮЧІК")  
+genai.configure(api_key="")  
 
 model = genai.GenerativeModel('gemini-3.1-flash-lite')
 
@@ -81,7 +98,7 @@ def analyze_incident_with_gemini(text):
         return None, None, None
 
 
-def get_news_links_for_category(category_id, max_clicks=2):
+def get_news_links_for_category(category_id, max_clicks=0):
     """Збирає посилання на новини для конкретної категорії."""
     url = f"https://kyiv.npu.gov.ua/timeline?&type=posts&category_id={category_id}"
     links = set()
@@ -89,7 +106,7 @@ def get_news_links_for_category(category_id, max_clicks=2):
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True) 
         page = browser.new_page()
-        page.goto(url)
+        page.goto(url, timeout=60000, wait_until="domcontentloaded")
         time.sleep(2)
         
         for _ in range(max_clicks):
@@ -122,7 +139,7 @@ if __name__ == "__main__":
 
     for cat_id, crime_type in CATEGORIES.items():
         print(f"\n--- Збираємо посилання для категорії: {crime_type} ---")
-        links = get_news_links_for_category(cat_id, max_clicks=2) 
+        links = get_news_links_for_category(cat_id, max_clicks=0) 
         print(f"Знайдено {len(links)} новин. Аналізуємо текст...")
         
         for link in links:
@@ -150,16 +167,48 @@ if __name__ == "__main__":
                         "street": street,
                         "lat": lat,
                         "lon": lon,
-                        "url": link
+                        "url": link,
+                        "source": "web"
                     }
                     all_crimes.append(crime_data)
-                    print(f"[+] Успіх! {crime_type}: {street} ({lat}, {lon})")
+                    print(f"Успіх! {crime_type}: {street} ({lat}, {lon})")
                 else:
-                    print(f"[~] Знайдено вулицю '{street}', але Geopy не зміг її знайти на мапі.")
+                    print(f"Знайдено вулицю '{street}', але Geopy не зміг її знайти на мапі.")
             else:
                 pass 
             
 
             time.sleep(2)
     
-    print(f"\nУспішно оброблено та геокодовано: {len(all_crimes)} подій.")
+    db = SessionLocal()
+
+    for crime in all_crimes:
+        point_geom = f"SRID=4326;POINT({crime['lon']} {crime['lat']})"
+        
+        # 2. Отримуємо правильний ID зі словника за назвою категорії
+        cat_id = CATEGORY_MAPPING.get(crime['type'])
+        
+        # Захист від помилок: якщо категорію не знайдено, пропускаємо запис
+        if not cat_id:
+            print(f"невідома категорія '{crime['type']}' для новини {crime['url']}")
+            continue
+        
+        new_incident = Incident(
+            category_id=cat_id,
+            title=f"{crime['type']} на {crime['street']}", 
+            address_text=crime['street'],
+            geom=point_geom,
+            source_url=crime['url'],
+            source="web"
+        )
+        
+        try:
+            db.add(new_incident)
+            db.commit()
+            print(f"Збережено: {crime['street']}")
+        except Exception as e:
+            db.rollback() 
+            print(f"Помилка при збереженні {crime['url']}:")
+            print(f"Деталі помилки: {e}\n")
+
+    db.close()
