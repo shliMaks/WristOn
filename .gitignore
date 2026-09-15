@@ -1,6 +1,3 @@
-# CONFIG FILE
-config.py
-
 # TELEGRAM SESSION FILES
 sessions/
 *.session
