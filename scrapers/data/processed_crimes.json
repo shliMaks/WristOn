@@ -1,0 +1,371 @@
+[
+    {
+        "category_id": 316,
+        "title": "Грабіж велосипедів та напад на консьєржа",
+        "address_text": "Героїв Сталінграда",
+        "geom": "POINT(30.7614126 50.5070246)",
+        "incident_date": "2025-11-02T19:57:35+00:00",
+        "source_url": "https://t.me/kyivoperativ/23474",
+        "source_type": "telegram"
+    },
+    {
+        "category_id": 326,
+        "title": "Напад на поліцейських під час переслідування",
+        "address_text": "Локація невідома",
+        "geom": null,
+        "incident_date": "2025-11-02T19:57:35+00:00",
+        "source_url": "https://t.me/kyivoperativ/23477",
+        "source_type": "telegram"
+    },
+    {
+        "category_id": 316,
+        "title": "Крадіжка гаманця в підземному переході",
+        "address_text": "Локація невідома",
+        "geom": null,
+        "incident_date": "2025-11-02T19:57:35+00:00",
+        "source_url": "https://t.me/kyivoperativ/23481",
+        "source_type": "telegram"
+    },
+    {
+        "category_id": 320,
+        "title": "ДТП під шляхопроводом",
+        "address_text": "Перемоги",
+        "geom": "POINT(30.3663162 50.443875)",
+        "incident_date": "2025-11-02T19:57:35+00:00",
+        "source_url": "https://t.me/kyivoperativ/23483",
+        "source_type": "telegram"
+    },
+    {
+        "category_id": 320,
+        "title": "ДТП між KIA та Lada",
+        "address_text": "11 лінія",
+        "geom": "POINT(30.7537357 50.4651575)",
+        "incident_date": "2025-11-02T19:57:34+00:00",
+        "source_url": "https://t.me/kyivoperativ/23454",
+        "source_type": "telegram"
+    },
+    {
+        "category_id": 320,
+        "title": "ДТП з відбійником на трасі",
+        "address_text": "Житомирська траса",
+        "geom": null,
+        "incident_date": "2025-11-02T19:57:35+00:00",
+        "source_url": "https://t.me/kyivoperativ/23472",
+        "source_type": "telegram"
+    },
+    {
+        "category_id": 326,
+        "title": "Сутичка між мешканцями та тітушками",
+        "address_text": "Половецька",
+        "geom": "POINT(30.4845175 50.4690372)",
+        "incident_date": "2025-11-02T19:57:34+00:00",
+        "source_url": "https://t.me/kyivoperativ/23446",
+        "source_type": "telegram"
+    },
+    {
+        "category_id": 316,
+        "title": "Крадіжка в магазині",
+        "address_text": "Гната Юри",
+        "geom": null,
+        "incident_date": "2025-11-02T19:57:34+00:00",
+        "source_url": "https://t.me/kyivoperativ/23452",
+        "source_type": "telegram"
+    },
+    {
+        "category_id": 320,
+        "title": "Потрійна ДТП біля ТРЦ",
+        "address_text": "Локація невідома",
+        "geom": null,
+        "incident_date": "2025-11-02T19:57:33+00:00",
+        "source_url": "https://t.me/kyivoperativ/23420",
+        "source_type": "telegram"
+    },
+    {
+        "category_id": 316,
+        "title": "Затримання крадія кабелю",
+        "address_text": "Старосільська",
+        "geom": "POINT(30.5922571 50.477578)",
+        "incident_date": "2025-11-02T19:57:33+00:00",
+        "source_url": "https://t.me/kyivoperativ/23428",
+        "source_type": "telegram"
+    },
+    {
+        "category_id": 320,
+        "title": "Масштабна ДТП за участю вантажівок",
+        "address_text": "Локація невідома",
+        "geom": null,
+        "incident_date": "2025-11-02T19:57:33+00:00",
+        "source_url": "https://t.me/kyivoperativ/23433",
+        "source_type": "telegram"
+    },
+    {
+        "category_id": 326,
+        "title": "Обстріл ресторану з гранатомета",
+        "address_text": "Володимирська",
+        "geom": "POINT(30.5129571 50.4449145)",
+        "incident_date": "2025-11-02T19:57:31+00:00",
+        "source_url": "https://t.me/kyivoperativ/23393",
+        "source_type": "telegram"
+    },
+    {
+        "category_id": 316,
+        "title": "Крадіжки з автомобілів",
+        "address_text": "проспект Правди",
+        "geom": null,
+        "incident_date": "2025-11-02T19:57:32+00:00",
+        "source_url": "https://t.me/kyivoperativ/23400",
+        "source_type": "telegram"
+    },
+    {
+        "category_id": 326,
+        "title": "Побиття охоронця та прибиральниці",
+        "address_text": "Луначарського",
+        "geom": "POINT(30.3237884 50.1760379)",
+        "incident_date": "2025-11-02T19:57:32+00:00",
+        "source_url": "https://t.me/kyivoperativ/23406",
+        "source_type": "telegram"
+    },
+    {
+        "category_id": 326,
+        "title": "Затримання чоловіка зі зброєю",
+        "address_text": "Петра Запорожця",
+        "geom": "POINT(30.582061 50.5083992)",
+        "incident_date": "2025-11-02T19:57:32+00:00",
+        "source_url": "https://t.me/kyivoperativ/23411",
+        "source_type": "telegram"
+    },
+    {
+        "category_id": 316,
+        "title": "Крадіжка з автомобіля",
+        "address_text": "Локація невідома",
+        "geom": null,
+        "incident_date": "2025-11-02T19:57:31+00:00",
+        "source_url": "https://t.me/kyivoperativ/23371",
+        "source_type": "telegram"
+    },
+    {
+        "category_id": 321,
+        "title": "Вбивство під час конфлікту",
+        "address_text": "Локація невідома",
+        "geom": null,
+        "incident_date": "2025-11-02T19:57:31+00:00",
+        "source_url": "https://t.me/kyivoperativ/23373",
+        "source_type": "telegram"
+    },
+    {
+        "category_id": 316,
+        "title": "Викрадення автомобіля",
+        "address_text": "Локація невідома",
+        "geom": null,
+        "incident_date": "2025-11-02T19:57:31+00:00",
+        "source_url": "https://t.me/kyivoperativ/23376",
+        "source_type": "telegram"
+    },
+    {
+        "category_id": 316,
+        "title": "Викрадення автомобіля Toyota Rav4",
+        "address_text": "Локація невідома",
+        "geom": null,
+        "incident_date": "2025-11-02T19:57:31+00:00",
+        "source_url": "https://t.me/kyivoperativ/23377",
+        "source_type": "telegram"
+    },
+    {
+        "category_id": 320,
+        "title": "ДТП у стані сп'яніння",
+        "address_text": "Вікентія Хвойки",
+        "geom": "POINT(30.4885398 50.4854127)",
+        "incident_date": "2025-11-02T19:57:31+00:00",
+        "source_url": "https://t.me/kyivoperativ/23386",
+        "source_type": "telegram"
+    },
+    {
+        "category_id": 322,
+        "title": "Підрив автомобіля СБУ",
+        "address_text": "Локація невідома",
+        "geom": null,
+        "incident_date": null,
+        "source_url": "https://t.me/kyivoperativ/23388",
+        "source_type": "telegram"
+    },
+    {
+        "category_id": 316,
+        "title": "Затримання групи крадіїв",
+        "address_text": "Локація невідома",
+        "geom": null,
+        "incident_date": "2025-11-02T19:57:30+00:00",
+        "source_url": "https://t.me/kyivoperativ/23349",
+        "source_type": "telegram"
+    },
+    {
+        "category_id": 316,
+        "title": "Викрадення автомобіля Range Rover",
+        "address_text": "Нікольсько-Слобідська",
+        "geom": "POINT(30.5934287 50.4561747)",
+        "incident_date": "2025-11-02T19:57:30+00:00",
+        "source_url": "https://t.me/kyivoperativ/23350",
+        "source_type": "telegram"
+    },
+    {
+        "category_id": 322,
+        "title": "Розшук підозрюваного у підриві гранати",
+        "address_text": "Локація невідома",
+        "geom": null,
+        "incident_date": "2025-11-02T19:57:30+00:00",
+        "source_url": "https://t.me/kyivoperativ/23352",
+        "source_type": "telegram"
+    },
+    {
+        "category_id": 316,
+        "title": "Викрадення автомобіля Lexus LX570",
+        "address_text": "Полярна",
+        "geom": "POINT(30.4536844 50.5197806)",
+        "incident_date": "2025-11-02T19:57:30+00:00",
+        "source_url": "https://t.me/kyivoperativ/23362",
+        "source_type": "telegram"
+    },
+    {
+        "category_id": 322,
+        "title": "Розбійний напад з ножовими пораненнями",
+        "address_text": "Прирічна",
+        "geom": "POINT(30.520761 50.525666)",
+        "incident_date": "2025-11-02T19:57:29+00:00",
+        "source_url": "https://t.me/kyivoperativ/23333",
+        "source_type": "telegram"
+    },
+    {
+        "category_id": 320,
+        "title": "ДТП: автомобіль в'їхав у сніговий замет",
+        "address_text": "Оболонський проспект",
+        "geom": "POINT(30.4971793 50.5225235)",
+        "incident_date": "2025-11-02T19:57:29+00:00",
+        "source_url": "https://t.me/kyivoperativ/23341",
+        "source_type": "telegram"
+    },
+    {
+        "category_id": 320,
+        "title": "Травмування дитини на залізничних коліях",
+        "address_text": "Локація невідома",
+        "geom": null,
+        "incident_date": "2025-11-02T19:57:30+00:00",
+        "source_url": "https://t.me/kyivoperativ/23344",
+        "source_type": "telegram"
+    },
+    {
+        "category_id": 321,
+        "title": "Напад на поліцейського з ножами",
+        "address_text": "Локація невідома",
+        "geom": null,
+        "incident_date": "2025-11-02T19:49:51+00:00",
+        "source_url": "https://t.me/kyivoperativ/23306",
+        "source_type": "telegram"
+    },
+    {
+        "category_id": 321,
+        "title": "Вбивство внаслідок ножового поранення",
+        "address_text": "Локація невідома",
+        "geom": null,
+        "incident_date": "2025-11-02T19:49:51+00:00",
+        "source_url": "https://t.me/kyivoperativ/23309",
+        "source_type": "telegram"
+    },
+    {
+        "category_id": 320,
+        "title": "ДТП: перекидання військового автомобіля",
+        "address_text": "Локація невідома",
+        "geom": null,
+        "incident_date": null,
+        "source_url": "https://t.me/kyivoperativ/23311",
+        "source_type": "telegram"
+    },
+    {
+        "category_id": 316,
+        "title": "Викрадення автомобіля",
+        "address_text": "Героїв Сталінграда",
+        "geom": "POINT(30.7614126 50.5070246)",
+        "incident_date": "2025-11-02T19:49:52+00:00",
+        "source_url": "https://t.me/kyivoperativ/23321",
+        "source_type": "telegram"
+    },
+    {
+        "category_id": 316,
+        "title": "Викрадення автомобіля",
+        "address_text": "Бессарабська площа",
+        "geom": "POINT(30.5198363 50.4417761)",
+        "incident_date": "2025-11-02T19:57:29+00:00",
+        "source_url": "https://t.me/kyivoperativ/23324",
+        "source_type": "telegram"
+    },
+    {
+        "category_id": 316,
+        "title": "Крадіжка мобільного телефону в лікарні",
+        "address_text": "Локація невідома",
+        "geom": null,
+        "incident_date": "2025-11-02T19:49:50+00:00",
+        "source_url": "https://t.me/kyivoperativ/23286",
+        "source_type": "telegram"
+    },
+    {
+        "category_id": 316,
+        "title": "Кишенькові крадіжки",
+        "address_text": "Локація невідома",
+        "geom": null,
+        "incident_date": "2025-11-02T19:49:50+00:00",
+        "source_url": "https://t.me/kyivoperativ/23287",
+        "source_type": "telegram"
+    },
+    {
+        "category_id": 326,
+        "title": "Протестна акція біля КМУ",
+        "address_text": "Локація невідома",
+        "geom": null,
+        "incident_date": "2025-11-02T19:49:50+00:00",
+        "source_url": "https://t.me/kyivoperativ/23289",
+        "source_type": "telegram"
+    },
+    {
+        "category_id": 326,
+        "title": "Хуліганство: блокування руху трамваїв",
+        "address_text": "Коперника",
+        "geom": "POINT(30.4823343 50.4591224)",
+        "incident_date": "2025-11-02T19:49:50+00:00",
+        "source_url": "https://t.me/kyivoperativ/23292",
+        "source_type": "telegram"
+    },
+    {
+        "category_id": 316,
+        "title": "Крадіжка особистих речей",
+        "address_text": "Локація невідома",
+        "geom": null,
+        "incident_date": "2025-11-02T19:49:50+00:00",
+        "source_url": "https://t.me/kyivoperativ/23294",
+        "source_type": "telegram"
+    },
+    {
+        "category_id": 321,
+        "title": "Вбивство внаслідок нападу з ножем",
+        "address_text": "Лютеранська",
+        "geom": "POINT(30.5261019 50.4445624)",
+        "incident_date": "2025-11-02T19:49:51+00:00",
+        "source_url": "https://t.me/kyivoperativ/23297",
+        "source_type": "telegram"
+    },
+    {
+        "category_id": 320,
+        "title": "ДТП за участю президентського кортежу",
+        "address_text": "Шовковична",
+        "geom": "POINT(30.5263559 50.4397285)",
+        "incident_date": "2025-11-02T19:49:51+00:00",
+        "source_url": "https://t.me/kyivoperativ/23299",
+        "source_type": "telegram"
+    },
+    {
+        "category_id": 320,
+        "title": "Блокування руху трамваїв автомобілем Volkswagen",
+        "address_text": "Локація невідома",
+        "geom": null,
+        "incident_date": "2025-11-02T19:49:51+00:00",
+        "source_url": "https://t.me/kyivoperativ/23303",
+        "source_type": "telegram"
+    }
+]
