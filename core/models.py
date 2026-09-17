@@ -1,8 +1,10 @@
+import datetime
 from sqlalchemy import Column, Integer, String, Float, ForeignKey, DateTime, text
 from sqlalchemy.dialects.postgresql import UUID
 from geoalchemy2 import Geometry
-from database import Base
-import datetime
+from core.database import Base
+
+
 
 class IncidentCategory(Base):
     __tablename__ = "incident_categories"
@@ -10,6 +12,7 @@ class IncidentCategory(Base):
     id = Column(Integer, primary_key=True, index=True)
     name = Column(String(255), nullable=False)
     danger_weight = Column(Float, default=1.0)
+
 
 class Incident(Base):
     __tablename__ = "incidents"
@@ -19,6 +22,6 @@ class Incident(Base):
     title = Column(String)
     address_text = Column(String)
     geom = Column(Geometry('POINT', srid=4326))
-    incident_date = Column(DateTime(timezone=True), default=datetime.datetime.utcnow)
+    incident_date = Column(DateTime(timezone=True), default=None)
     source_url = Column(String, unique=True)
     source = Column(String(50)) 
